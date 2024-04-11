@@ -1,4 +1,29 @@
-.fakeimg {
-    height: 200px;
-    background: #eee;
+.header{
+  display: flex;
+  gap: 1em;
+
+}
+
+.carousel{
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-inner{
+  max-width: 800px;
+}
+
+@media (max-width: 800px) {
+  .header{
+    flex-direction: column;
+    align-items: center;
   }
+  .header div{
+    text-align: center;
+  }
+  .carousel-item img{
+    max-width: 100%;
+  }
+}
